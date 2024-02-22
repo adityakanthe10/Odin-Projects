@@ -8,7 +8,7 @@ Completed Projects
 3. Rock_paper_Scissor - Intro to Javascript add DOM Manipulation .
 4. Calculator - Craeted A Simple Frontend Calculator.
    
-##Ongoing Project
+## Ongoing Project
 
 ## Intermediate HTML and CSS 
 22/02/2024
