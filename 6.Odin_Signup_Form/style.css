@@ -5,10 +5,10 @@
 }
 
 .main{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-flow: row wrap;
-    width: 100vw;
-    height: 100vw;
 }
 
 .left-side{
@@ -22,6 +22,7 @@
 
 .logo{
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
@@ -36,4 +37,29 @@
 .logo h1{
     color: white;
     font-size: 100px;
+}
+
+.right-side{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60vw;
+    background-color: lightgray;
+}
+
+.right-side p{
+    font-size:20px ;
+}
+
+.dummy-text{
+    padding: 10px;
+    margin: 20px;
+    font-weight: 700;
+}
+
+.form h2{
+padding: 20px;
+}
+.form-main{
+display: flex;
+flex-flow: row wrap;
 }
