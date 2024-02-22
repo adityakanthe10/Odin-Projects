@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyWeather App</title>
+    <title>My Weather App</title>
     <!-- Add icon link -->
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,86 +11,16 @@
 </head>
 <body>
 <header>
-    <body>
-        <header>
-            <div class="navbar">
-                <div class="nav-logo border">
-                    <div class="logo"></div>
-                </div>
-                <div class="nav-search">
-                    <input placeholder="Search City" class="search-input">
-                    <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
-                <div class="celcius-Farhenheit">
-                <!-- Add a feture where we can view temp in c &F -->
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="current-info">
-            <div class="place-container">
-             <div class="time-zone" id="time-zone">Asia/kolkata</div>
-             <div class="country" id="country">INDIA</div>
-            </div>
-            <div class="date-information">
-            <div class="time" id="time">
-                12:30 <span id="am-pm">PM</span>
-            </div>
-            <div class="date" id="date">
-                Monday,24 May
-            </div>
-            </div>
+    <navbar>
+        <label for="location">location</label>
+        <input type="text" id="location" name="location">
+        <button type="submit">Search</button>
+    </navbar>
+    <main>
+        <div class="weather-data">
+            
         </div>
-       
-           <div class="others" id="current-weather-items">
-            <div class="weather-icon">
-                <div class="heading">Humidity </div>
-                <div class="data"> 95.2%</div>
-            </div>
-            <div class="weather-icon">
-                <div class="heading">pressure</div>
-                <div class="data">121</div>
-            </div>
-            <div class="weather-icon">
-                <div class="heading">wind speed</div>
-                <div class="data">222</div>
-            </div>
-       
-    </div>
-        <div class="future-forecast">
-            <div class="today" id="current-temp">
-                <img src="" alt="weather icon" class="w-icon">
-                <div class="day">Monday</div>
-                <div class="temp">Night - 25.6&#176</div>
-                <div class="temp">Day - 35.6&#176</div>
-            </div>
-        </div>    
-        <div class="weather-forecast" id="weather-forecast">
-        <div class="weather-forecast-item">
-            <div class="day">Tue</div>
-            <img src="" alt="weather icon" class="w-icon">
-            <div class="day">Monday</div>
-            <div class="temp">Night - 25.6&#176</div>
-            <div class="temp">Day - 35.6&#176</div>
-        </div>
-        <div class="weather-forecast-item">
-            <div class="day">Tue</div>
-            <img src="" alt="weather icon" class="w-icon">
-            <div class="day">Monday</div>
-            <div class="temp">Night - 25.6&#176</div>
-            <div class="temp">Day - 35.6&#176</div>
-        </div>
-        <div class="weather-forecast-item">
-            <div class="day">Tue</div>
-            <img src="" alt="weather icon" class="w-icon">
-            <div class="day">Monday</div>
-            <div class="temp">Night - 25.6&#176</div>
-            <div class="temp">Day - 35.6&#176</div>
-        </div>
-        </div>
-
-        </main>
+    </main>
+</header>
     </body>
 </html>
