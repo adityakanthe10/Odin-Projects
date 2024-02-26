@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -21,36 +22,44 @@
             <p class="sign-up-text">Sign up now to get started.</p><br>
             <p>You <em>Know</em> you want to .</p>
         </div>
-        <div class="form">
-            <h2>Let's do this!</h2>
-            <div class="form-main">
-                <div>
-                <div class="first-name">
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" name="firstname" id="firstname" required>
+        <form id="my-form">
+            <div class="my-form">
+                <div class="form-title">
+                    Lets's Do This
                 </div>
-                <div class="last-name">
-                    <label for="lastname">Last Name</label><br>
-                    <input type="text" name="firstname" id="firstname" required>
+                <div class="input">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <div id="first-name-error" class="error"></div>
                 </div>
+                <div class="input">
+                    <label for="LastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="lastName" required>
                 </div>
-                <div class="first-name">
-                    <div>
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" name="firstname" id="firstname" required>
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="first-name">
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" name="firstname" id="firstname" required>
+                <div class="input">
+                    <label for="phonenumbers">PHONE NUMBER</label>
+                    <input type="tel" id="phonenumbers" name="phonenumbers" minlength="0" maxlength="10">
+                </div>
+                <div class="input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input">
+                    <label for="confirmpassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmpassword" name="confirmpassword" required>
+                    
                 </div>
             </div>
-                <div class="first-name">
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" name="firstname" id="firstname" required>
-                </div>
-            </div>
-        </div>
+        </form>
+        <div class="create-btn">
+            <button type="submit" form="form" id="create-account">Create Account</button>
+            <p>Already have an account?<a href="index.html"> Log In</a></p>
         </div>
     </div>
+
 </body>
 </html>
