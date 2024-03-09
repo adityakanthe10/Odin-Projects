@@ -12,30 +12,45 @@ function getComputerChoice() {
   if (randomChoice === 0) {
     return "rock";
   } else if (randomChoice === 1) {
-    return "scissors";
+    return "scissor";
   } else if (randomChoice === 2) {
     return "paper";
   }
 }
-
-function playRound(playerSelection, computerSelection) {
-  const playerChoice = playerSelection.toLowerCase();
-
-  if (playerChoice === computerSelection) {
-    return "It's a TIE!!!";
-  } else if (
-    (playerChoice === "rock" && computerSelection === "scissors") ||
-    (playerChoice === "paper" && computerSelection === "rock") ||
-    (playerChoice === "scissors" && computerSelection === "rock")
-  ) {
-    return `You win! ${playerChoice} beats ${computerSelection} `;
-  } else {
-    return ` You Lose! ${computerSelection} beats ${playerChoice}`;
-  }
-}
-
-const playerSelection = prompt;
+// const inputChoice = prompt("Rock Paper Scissor");
+// playerSelection = inputChoice;
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
 
 //  Write a NEW function called game(). Use the previous function inside of this one to play a best-of-five game that keeps score and reports a winner or loser at the end.
+
+document.getElementById("rock").onclick = function () {
+  inputChoice("rock");
+};
+document.getElementById("paper").onclick = function () {
+  inputChoice("paper");
+};
+document.getElementById("scissor").onclick = function () {
+  inputChoice("scissor");
+};
+function inputChoice(choice) {
+  playerSelection = choice;
+
+  function playRound(playerSelection, computerSelection) {
+    const playerChoice = playerSelection.toLowerCase();
+
+    if (playerChoice === computerSelection) {
+      return "It's a TIE!!!";
+    } else if (
+      (playerChoice === "rock" && computerSelection === "scissor") ||
+      (playerChoice === "paper" && computerSelection === "rock") ||
+      (playerChoice === "scissor" && computerSelection === "paper")
+    ) {
+      return `You win! ${playerChoice} beats ${computerSelection} `;
+    } else {
+      return ` You Lose! ${computerSelection} beats ${playerChoice}`;
+    }
+  }
+  console.log(playRound(playerSelection, computerSelection));
+}
+
+const round = document.getElementById("round-score");

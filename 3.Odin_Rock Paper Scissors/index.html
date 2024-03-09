@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
 <h1>Rock , Paper , Scissors</h1>
 <div class="scoreboard">
-    <h2>Choose</h2>
-    <p>first to score 5 points win</p>
+    <h2>First to score 5 points win</h2>
+    <p id="playerScore">Player : 0 <span id="computerScore">Computer : 0 </span></p> 
+</div>
+<div class="round-score">
+    <p id="round-score"></p>
+</div>
+<div class="player-choice">
+    <button id="rock" type= "button">Rock</button>
+    <button id="paper" type="button">Paper</button>
+    <button id="scissor" type="button">Scissor</button>
 </div>
 </body>
 </html>
+
+<!-- 
+    1. Create button Functional-Rock paper Scissors
+    using DOM
+    2. 
+ -->

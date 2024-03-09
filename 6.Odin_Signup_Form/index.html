@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -22,8 +21,8 @@
             <p class="sign-up-text">Sign up now to get started.</p><br>
             <p>You <em>Know</em> you want to .</p>
         </div>
-        <form id="my-form">
-            <div class="my-form">
+        <form action="#" id="my-form" method="get">
+            <div class="form">
                 <div class="form-title">
                     Lets's Do This
                 </div>
@@ -53,13 +52,13 @@
                     <input type="password" id="confirmpassword" name="confirmpassword" required>
                     
                 </div>
+                <div class="create-btn">
+                    <button type="submit" form="form" id="create-account" value="submit">Create Account</button>
+                    <p>Already have an account?<a href="index.html"> Log In</a></p>
             </div>
         </form>
-        <div class="create-btn">
-            <button type="submit" form="form" id="create-account">Create Account</button>
-            <p>Already have an account?<a href="index.html"> Log In</a></p>
         </div>
     </div>
-
+    <script src="script.js" defer></script>
 </body>
 </html>
