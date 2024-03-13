@@ -9,16 +9,6 @@ This simple To-Do List application allows users to add, delete, and mark tasks a
 - Mark tasks as completed: Click on a task to toggle its completion status. Completed tasks are visually distinguished with a strikethrough.
 - Data persistence: Tasks are stored locally in the browser's local storage, so they are retained even after the page is refreshed or reopened.
 
-## Getting Started
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/your-username/to-do-list.git
-    ```
-
-2. Open the `index.html` file in your web browser to view the application.
-
 ## Usage
 
 1. Enter a task in the input box.
