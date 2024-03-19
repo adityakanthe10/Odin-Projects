@@ -14,8 +14,8 @@ scissor.addEventListener("click", function () {
 });
 
 function inputChoice(choice) {
-  let playerSelection = choice;
-  let computerSelection = getComputerChoice();
+  var playerSelection = choice;
+  var computerSelection = getComputerChoice();
   const result = playRound(playerSelection, computerSelection);
   const roundScoreDiv = document.getElementById("roundScore");
   if (roundScoreDiv) {
@@ -108,7 +108,7 @@ function game() {
   roundsPlayed = 0;
   // Loop until someone reaches 3 wins
   while (playerScore < 3 && computerScore < 3) {
-    updateScoreboard();
+    updateScoreboard(playRound(inputChoice(), getComputerChoice()));
   }
   checkWinner();
 
