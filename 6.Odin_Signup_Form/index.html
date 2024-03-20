@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
         <div class="right-side">
             <div class="dummy-text right">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-            </p> 
+            </p>
             <p class="sign-up-text">Sign up now to get started.</p><br>
             <p>You <em>Know</em> you want to .</p>
         </div>
@@ -32,28 +32,32 @@
                     <div id="first-name-error" class="error"></div>
                 </div>
                 <div class="input">
-                    <label for="LastName">LAST NAME</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    <div id="last-name-error" class="error"></div>
                 </div>
                 <div class="input">
                     <label for="email">EMAIL</label>
                     <input type="email" id="email" name="email" required>
+                    <div id="email-error"class="error"></div>
                 </div>
                 <div class="input">
-                    <label for="phonenumbers">PHONE NUMBER</label>
-                    <input type="tel" id="phonenumbers" name="phonenumbers" minlength="0" maxlength="10">
+                    <label for="phonenumber">PHONE NUMBER</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" minlength="0" maxlength="10" pattern="[0-9]{10}">
+                    <div id="phonenumber-error"class="error"></div>
                 </div>
                 <div class="input">
                     <label for="password">PASSWORD</label>
                     <input type="password" id="password" name="password" required>
+                    <div id="password-error"class="error"></div>
                 </div>
                 <div class="input">
                     <label for="confirmpassword">CONFIRM PASSWORD</label>
                     <input type="password" id="confirmpassword" name="confirmpassword" required>
-                    
+                    <div id="confirmpassword-error"class="error"></div>
                 </div>
                 <div class="create-btn">
-                    <button type="submit" form="form" id="create-account" value="submit">Create Account</button>
+                    <button type="submit" form="my-form" id="create-account" value="submit">Create Account</button>
                     <p>Already have an account?<a href="index.html"> Log In</a></p>
             </div>
         </form>
