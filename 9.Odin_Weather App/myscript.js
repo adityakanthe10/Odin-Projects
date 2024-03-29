@@ -9,7 +9,7 @@ function apiCall() {
 
   async function getapi() {
     const response = await fetch("apiinfo.json");
-    const 
+    const  data 
   }
 }
 apiCall();
