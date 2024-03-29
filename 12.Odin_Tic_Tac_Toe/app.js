@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let msg = document.querySelector("#msg");
   // playerX, O
   let turnO = true;
-  let playerXWins = 0;
-  let playerOWins = 0;
+
   // winn patterns
 
   const winPatterns = [
