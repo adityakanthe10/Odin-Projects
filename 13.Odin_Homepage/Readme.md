@@ -1,0 +1,71 @@
+# Changes 
+
+1. Added Resposiveness to Website
+2. Add Dark Mode
+
+# Default Changes
+
+1. Select Images pics
+2. Select Styling
+3. Get Project Screenshots
+4. Learn to deploy projects and make on click and links working 
+
+## Header Section
+1. Name
+
+## Home
+1. Name
+2. add Links 
+3. Add Description
+4. Change Button
+5. Image
+
+## About
+1. Image
+2. Description
+3. Name
+4. Contact Detail
+5. emailid
+6. Button working download cv 
+
+## Skills
+1. adjust percentage
+2. Find a different image
+
+## Services instead add certifications
+1. Convert services section or delete
+2. make service section and skills section one
+
+
+## Portfolio
+1. Change images to real working projects
+2. add link to projects
+
+
+## Form 
+1. Make form working as odin form
+2. make form working
+
+## Footer
+1. Make changes as per amazon project 
+2. Change logos
+3. Add link to them
+4. Change copyright section
+
+# Features to Add
+1. Preloader to Website .
+2. Cursor and animation make it live as per link 1 video .
+3. animation project section video 1 and link appears,also add description.
+4. add quote section.
+5. at last add back top button.
+
+6. Copy the home page animation
+7. Try color combination 
+8. Get a good image.
+
+# Objective
+1. To Learn Responsiveness
+2. Use this website as frontend portfolio 
+3. Add features and make this website my own
+4.  Remember this is side project of odin and not use much of my time and  Have to complete other projects tooo.
+6. Make use of styling to change entire website as it would not recognizable it is copied from some yt video
