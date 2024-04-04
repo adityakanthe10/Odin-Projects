@@ -1,7 +1,7 @@
 # Changes 
 
-1. Added Resposiveness to Website
-2. Add Dark Mode
+1. Added Resposiveness to Website D
+2. Add Dark Mode D
 
 # Default Changes
 
@@ -14,8 +14,8 @@
 1. Name
 
 ## Home
-1. Name
-2. add Links 
+1. Name D
+2. add Links  D
 3. Add Description
 4. Change Button
 5. Image
