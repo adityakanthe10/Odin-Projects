@@ -94,7 +94,7 @@ header.shadow{
 #darkmode{
     font-size: 22px;
     cursor: pointer;
-    color: black;
+    color: var(--text-color);
 
 }
 
@@ -256,7 +256,7 @@ header.shadow{
     margin-bottom: 1rem;
 }
 
-.bars-box h3, span{
+.bars-box h3,span{
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -282,7 +282,7 @@ header.shadow{
 }
 
 .html-bar{
-    width: 94%;
+    width: 95%;
 }
 
 .css-bar{
@@ -290,11 +290,11 @@ header.shadow{
 }
 
 .js-bar{
-    width: 74%;
+    width: 78%;
 }
 
 .react-bar{
-    width: 80%;
+    width: 75%;
 }
 
 .services-content{
@@ -407,24 +407,50 @@ form textarea{
 }
 
 .footer{
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    /* display: grid; */
+    /* place-items: center; */
     padding: 50px;
     background: var(--main-color);
     color: #fff;
 }
 
 .footer h2{
+    /* color: var(--text-color); */
     font-size: var(--medium-font);
     margin-bottom: 1.4rem;
 }
 
 .footer-social a{
+    
     color: #fff;
     font-size: 22px;
     padding: 10px;
+    /* gap: 3rem; */
+}
+.footer-social a:hover{
+    color: var(--main-color);
+    background-color: white;
+    border-radius: 2.5rem;
 }
 
+.footer-button .btn{
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid white;
+}
+.footer-button .btn span{
+    font-size: 17px;
+}
+
+.footer-button a:hover{
+    color: var(--main-color);
+    background-color: white;
+    /* border-radius: 2.5rem; */
+}
 .copyright {
     padding: 20px;
     background: var(--main-color);
@@ -552,4 +578,13 @@ form textarea{
    .contact-form form{
     width: 100px;
    }
+}
+/* Adjust styles for dark mode */
+body.active .footer {
+    background: var(--main-color); /* Set background color for dark mode */
+    color: white; /* Set text color for dark mode */
+}
+
+body.active .footer-button .btn {
+    border: 2px solid white; /* Set border color for dark mode */
 }

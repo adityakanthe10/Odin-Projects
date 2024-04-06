@@ -8,41 +8,39 @@
 1. Select Images pics
 2. Select Styling
 3. Get Project Screenshots
-4. Learn to deploy projects and make on click and links working 
 
 ## Header Section
-1. Name
+1. Name D
 
 ## Home
-1. Name D
-2. add Links  D
-3. Add Description
 4. Change Button
 5. Image
+1. Name D
+2. add Links  D
+3. Add Description D
 
 ## About
 1. Image
-2. Description
-3. Name
-4. Contact Detail
-5. emailid
-6. Button working download cv 
+2. Description D
+3. Name D
+4. Contact Detail D
+5. emailid D 
+6. Button working download cv  D
 
 ## Skills
-1. adjust percentage
+1. adjust percentage D
 2. Find a different image
 
 ## Services instead add certifications
-1. Convert services section or delete
-2. make service section and skills section one
-
+1. Convert services section into certification
 
 ## Portfolio
-1. Change images to real working projects
-2. add link to projects
+1. Change images to real working projects .
+2. Adjust the images height and width .
+3. add link to projects
 
 
-## Form 
+## Form
 1. Make form working as odin form
 2. make form working
 
