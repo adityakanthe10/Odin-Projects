@@ -3,6 +3,17 @@
 1. Added Resposiveness to Website D
 2. Add Dark Mode D
 
+# Important Changes
+0. No bugs
+1. Change the entire color combination of website.
+2. Add the images and change the color
+3. Convert Service section into certification section
+4. add link to projects
+5. Preloader to Website . D
+6. Cursor and animation make it live as per link 1 video .
+7. animation project section video 1 and link appears,also add description.
+8. add quote section.
+
 # Default Changes
 
 1. Select Images pics
@@ -51,11 +62,11 @@
 4. Change copyright section
 
 # Features to Add
-1. Preloader to Website .
+1. Preloader to Website . D
 2. Cursor and animation make it live as per link 1 video .
 3. animation project section video 1 and link appears,also add description.
 4. add quote section.
-5. at last add back top button.
+5. at last add back top button. D
 
 6. Copy the home page animation
 7. Try color combination 

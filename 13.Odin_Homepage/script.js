@@ -28,3 +28,14 @@ darkmode.onclick = () => {
     document.body.classList.remove("active");
   }
 };
+// Function to hide the preloader
+function hidePreloader() {
+  const preloader = document.querySelector(".preloader");
+  preloader.style.display = "none"; // Hide the preloader
+}
+
+// Show the preloader when the page starts loading
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector(".preloader");
+  setTimeout(hidePreloader, 1000); // Hide the preloader after 2 seconds
+});
