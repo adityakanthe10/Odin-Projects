@@ -14,10 +14,10 @@
 }
 /* root is pseudo-class in CSS it allows us to define global CSS variable and set default values that can be accessed and used throughout your stylesheet */
 :root{
-    --main-color: #4a00e0;
+    --main-color:  	#1F51FF;
     --bg-color: #fff;
     --text-color:#0f0c27;
-    --hover: hsl(260,100%,51%);
+    --hover: 	 	hsl(227, 100%, 56%);
     
     --big-font :3.2rem;
     --medium-font:1.8rem;
@@ -277,7 +277,7 @@ header.shadow{
 }
 
 .skills-img img{
-    width: 80%;
+    width: 100%;
     padding-left: 4rem;
     object-position: center;
 }
@@ -302,7 +302,7 @@ header.shadow{
     left: 0;
     width: 100%;
     height: 0.5rem;
-    background: hsla(260, 100%, 44%, 0.4);
+    background: hsla(227, 100%, 56%, 0.4);
     border-radius: 0.5rem;
 }
 
@@ -321,15 +321,15 @@ header.shadow{
 }
 
 .css-bar{
-    width: 80%;
+    width: 88%;
 }
 
 .js-bar{
-    width: 78%;
+    width: 95%;
 }
 
 .react-bar{
-    width: 75%;
+    width: 84%;
 }
 
 .services-content{
@@ -367,8 +367,13 @@ header.shadow{
 
 .services-box a{
     color: var(--main-color);
-    font-size: var(--p-font);
+    font-size: 1rem;
     font-weight: 500;
+}
+.services-box a:hover{
+    color: lightblue;
+    /* font-size: 1rem; */
+    transform: scale(1.1);
 }
 
 .portfolio-content{
@@ -381,11 +386,17 @@ header.shadow{
 .portfolio-img{
     overflow: hidden;
     border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem ;
 }
 
 .portfolio-img img{
     width: 100%;
     display: block;
+    height: 100%;
+    transition: transform 0.5s ease;
+    
 }
 
 .portfolio-img img:hover{
@@ -469,7 +480,7 @@ form textarea{
 .footer-social a:hover{
     color: var(--main-color);
     background-color: white;
-    border-radius: 2.5rem;
+    border-radius: 50%;
 }
 
 .footer-button .btn{
