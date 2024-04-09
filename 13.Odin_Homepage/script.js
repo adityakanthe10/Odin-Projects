@@ -1,14 +1,3 @@
-// Function to add event listeners to multiple elements
-function addEventOnElements(elements, event, callback) {
-  if (!Array.isArray(elements)) {
-    // If 'elements' is not an array, convert it into an array
-    elements = [elements];
-  }
-  elements.forEach((element) => {
-    element.addEventListener(event, callback);
-  });
-}
-
 // Sticky Navbar
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
@@ -52,6 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // tile effect to main image
+
+// Function to add event listeners to multiple elements
+function addEventOnElements(elements, event, callback) {
+  if (!Array.isArray(elements)) {
+    // If 'elements' is not an array, convert it into an array
+    elements = [elements];
+  }
+  elements.forEach((element) => {
+    element.addEventListener(event, callback);
+  });
+}
 
 const tiltElements = document.querySelector("[data-tilt]");
 
