@@ -73,3 +73,12 @@ addEventOnElements(tiltElements, "mousemove", initTilt);
 addEventOnElements(tiltElements, "mouseout", function () {
   this.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
 });
+
+// Typed JS
+const typed = new Typed(".multiple-text", {
+  strings: ["Frontend Developer", "Web Designer", "UI/UX Designer"],
+  typeSpeed: 90,
+  backSpeed: 70,
+  backDelay: 500,
+  loop: true,
+});

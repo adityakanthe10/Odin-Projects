@@ -175,7 +175,9 @@ header.shadow{
     font-size: 1.1rem;
     font-weight: 400;
 }
-
+.multiple-text{
+    color: #1F51FF;
+}
 .home-text p{
     font-size: var(--p-font);
     font-weight: 400;
@@ -235,7 +237,8 @@ header.shadow{
 }
 
 .heading h2{
-    font-size: var(--medium-font)
+    font-size: var(--medium-font);
+    font-weight: 1000;
 }
 
 .heading span {
@@ -377,8 +380,13 @@ header.shadow{
     border-radius: 0.5rem;
     border-bottom: 2px solid var(--main-color);
     box-shadow: 0 2px 7px rgb(14 55 54/15%);
+    /* transition:  .5s ease; */
 }
-
+/* 
+.services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.2s);
+} */
 .services-box h3{
     font-size: 1rem;
     font-weight: 600;
@@ -397,8 +405,9 @@ header.shadow{
     font-size: 1rem;
     font-weight: 500;
 }
-.services-box a:hover{
+.services-box:hover{
     color: lightblue;
+    /* border: #1F51FF; */
     /* font-size: 1rem; */
     transform: scale(1.1);
 }
