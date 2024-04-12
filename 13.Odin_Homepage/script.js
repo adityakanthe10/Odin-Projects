@@ -53,12 +53,12 @@ function addEventOnElements(elements, event, callback) {
   });
 }
 
-const tiltElements = document.querySelector("[data-tilt]");
+const tiltElements = document.querySelectorAll("[data-tilt]");
 
 const initTilt = function (event) {
   //get tilt element center position
   const centerX = this.offsetWidth / 2;
-  const centerY = this.offsetWidth / 2;
+  const centerY = this.offsetHeight / 2;
 
   const tiltPosY = ((event.offsetX - centerX) / centerX) * 10;
   const tiltPosX = ((event.offsetY - centerY) / centerY) * 10;
@@ -68,7 +68,9 @@ const initTilt = function (event) {
   }deg)`;
 };
 
-addEventOnElements(tiltElements, "mousemove", initTilt);
+addEventOnElements(tiltElements, "mousemove", function (event) {
+  initTilt.call(this, event);
+});
 
 addEventOnElements(tiltElements, "mouseout", function () {
   this.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
@@ -85,16 +87,16 @@ const typed = new Typed(".multiple-text", {
 
 // Scroll Reveal
 
-ScrollReveal({
-  distance: "80px",
-  duration: 2000,
-  delay: 200,
-});
+// ScrollReveal({
+//   distance: "80px",
+//   duration: 2000,
+//   delay: 200,
+// });
 
-ScrollReveal().reveal(".home-text, .heading", { origin: "top" });
-ScrollReveal().reveal(
-  ".home-img,.skills-container,.services-content,.portfolio-content,.contact-form,.footer",
-  { origin: "bottom" }
-);
-ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home p, .about-text", { origin: "right" });
+// ScrollReveal().reveal(".home-text, .heading", { origin: "top" });
+// ScrollReveal().reveal(
+//   ".home-img,.skills-container,.services-content,.portfolio-content,.contact-form,.footer",
+//   { origin: "bottom" }
+// );
+// ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
+// ScrollReveal().reveal(".home p, .about-text", { origin: "right" });
