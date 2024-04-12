@@ -82,3 +82,19 @@ const typed = new Typed(".multiple-text", {
   backDelay: 500,
   loop: true,
 });
+
+// Scroll Reveal
+
+ScrollReveal({
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
+
+ScrollReveal().reveal(".home-text, .heading", { origin: "top" });
+ScrollReveal().reveal(
+  ".home-img,.skills-container,.services-content,.portfolio-content,.contact-form,.footer",
+  { origin: "bottom" }
+);
+ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
+ScrollReveal().reveal(".home p, .about-text", { origin: "right" });
