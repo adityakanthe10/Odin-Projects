@@ -13,6 +13,6 @@
 14. Tilt Effect is not working,remove tilt effect from about-img and add tilt effect to skills-img.
 15. There will be bugs correct them ,check every minute deatils
 16. Add custom cursor to the website
-
+17. Add modified logo to the name navbar and website title
 
 These are the final changes ,no more changes and only correct the bugs.
