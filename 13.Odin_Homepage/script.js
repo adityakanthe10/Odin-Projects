@@ -44,17 +44,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Function to add event listeners to multiple elements
 function addEventOnElements(elements, event, callback) {
-  if (!Array.isArray(elements)) {
+  // console.log(addEventOnElements);
+  if (elements instanceof NodeList) {
+    elements = Array.from(elements);
+  } else if (!Array.isArray(elements)) {
     // If 'elements' is not an array, convert it into an array
     elements = [elements];
   }
   elements.forEach((element) => {
+    console.log(element);
+    console.log("Adding event listener to:", element); // Log the element
+    console.log("Event:", event); // Log the event
+    console.log("Callback function:", callback);
     element.addEventListener(event, callback);
   });
 }
 
 const tiltElements = document.querySelectorAll("[data-tilt]");
-
+// console.log(tiltElements);
 const initTilt = function (event) {
   //get tilt element center position
   const centerX = this.offsetWidth / 2;
@@ -87,16 +94,17 @@ const typed = new Typed(".multiple-text", {
 
 // Scroll Reveal
 
-// ScrollReveal({
-//   distance: "80px",
-//   duration: 2000,
-//   delay: 200,
-// });
+ScrollReveal({
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
 
-// ScrollReveal().reveal(".home-text, .heading", { origin: "top" });
-// ScrollReveal().reveal(
-//   ".home-img,.skills-container,.services-content,.portfolio-content,.contact-form,.footer",
-//   { origin: "bottom" }
-// );
-// ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
-// ScrollReveal().reveal(".home p, .about-text", { origin: "right" });
+ScrollReveal().reveal(".home-text, .heading", { origin: "top" });
+ScrollReveal().reveal(
+  ".home-img,.skills-container,.services-content,.portfolio-content,.contact-form,.footer",
+  { origin: "bottom" }
+);
+ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
+ScrollReveal().reveal(".home p, .about-text", { origin: "right" });
+z;
