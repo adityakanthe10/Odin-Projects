@@ -1,6 +1,9 @@
 /* Google Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +25,9 @@
     --big-font :3.2rem;
     --medium-font:1.8rem;
     --p-font: 0.941rem;
+    --bg-rich-black-fogra-29: hsla(229,23%,9%,1);
+    --gradient-2: radial-gradient(circle at 75% 100%, hsla(79, 100%, 70%, 0.3) 0%, transparent 100%);
+    --transition-1: 0.25s ease;
 }
 
 /* PRELOADER */
@@ -71,6 +77,7 @@ body.active{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    font-family: 'Open Sans',san-serif;
 }
 /* selection is pseudo element and used to style portion of a document that is currently selected by the user */
 ::selection{
@@ -91,6 +98,7 @@ header{
     background: var(--bg-color);
     padding: 18px 10%;
     transition: 0.2s;
+    font-family: 'Jacquard 24',Arial,sans-serif;
 }
 
 header.shadow{
@@ -264,6 +272,12 @@ header.shadow{
     margin-top: 5rem;
 }
 
+.about-container a:hover{
+    background-color: #1F51FF;
+    color: var(--text-color);
+    border: 2px solid #1F51FF;
+
+}
 .about-img img{
     width: 80%;
     border-radius: 0.5rem;
@@ -420,8 +434,22 @@ header.shadow{
 
 .portfolio{
     width: 100%;
-    height: 100vh;
-    
+    height: 100vh;   
+}
+
+.portfolio::before{
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-color);
+    background-image: var(--gradient-2);
+    opacity: 0;
+    transition: var(--transition-1);
+}
+
+.portfolio:hover::before{
+    opacity: 0.9;
 }
 .portfolio-content{
     display: grid;
@@ -439,6 +467,7 @@ header.shadow{
 }
 
 .portfolio-img img{
+    position: relative;
     width: 100%;
     display: block;
     height: 100%;
@@ -683,11 +712,16 @@ body.active .footer {
 
 body.active .footer-button .btn {
     border: 2px solid white; /* Set border color for dark mode */
+ } 
+
+body.active .about-container .a:hover{
+    color: var(--text-color);
+    border: 2px solid #1F51FF;
+    background-color: white;
 }
-
-/* custom cursor */
-
-/* .cursot */
-
-/* scroll reveal  */
-
+*/
+body.active .about-container a:hover {
+    background-color: #fff; /* White background on hover */
+    color: #1F51FF !important; /* Text color on hover */
+    border: 2px solid #1F51FF; /* Border color on hover */
+}

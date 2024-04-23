@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Roboto,'sans-serif';
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.sidebar{
+     background-color: #2563eb;
+     height: 100vh;
+     color: white;
+}
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 40px ;
+}
+
+.icon-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.icon-text p {
+    margin-left: 10px;
+    font-size: 14px;
+    /* font-weight: 700; */
+}
+
+.list-items-bottom{
+    margin-top: 50px;
+}
+.logo-text h1{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.main{
+    background-color: white;
+    height: 100vh;
+}
+.sidebar svg,.list-items svg{
+    fill: white;
+}
+
+.icons svg{
+    margin: 5px;
+}
+/* Main Screen */
+
+.main{
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-input{
+    width: 700px;
+    background-color: #d1d5db;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    margin-left: 20px;
+    margin-right: 200px;
+    font-size: larger;
+}
+
+.avatarNavbar,.avatarWelcome{
+    margin: 0 20px;
+}
+.navbar,.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 20px;
+    /* justify-content: space-around; */
+}
+
+.welcome{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 20px;
+        /* justify-content: space-around; */
+    }
+
+    .right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        margin-right: 30px;
+    }
+
+    .btn{
+        background-color: #2563eb;
+        width: 80px;
+        height: 35px;
+        color: #d1d5db;
+        border: 1px solid #2563eb;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+
+.content{
+    background-color: #d1d5db;
+    display: grid;
+    grid-template-columns: 70% 30%;
+     box-shadow: 10px 5px 5px 5px black ; 
+     /* border-top: 1px solid black; */
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card{
+    background-color: white;
+    border-left: 7px solid #facc15;
+    border-radius: 5px;
+    width: 80%;
+    height: 150px;
+    margin: 15px 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+}
+
+h6{
+    font-size: 18px;
+}
+
+.card p{
+    font-size: 14px;
+    color: #4b5563;
+    margin: 10px 0;
+}
+
+h4{
+    margin-left: 40px;
+    margin: 20px;
+    font-family: Roboto,'sans-serif';
+}
+
+.ann-trend{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.ann-card,.trend-card{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px ;
+
+}
+
+.ann-text{
+    padding: 5px 10px;
+}
+
+.ann-text h6,.trend-text h6{
+ font-size: 15px;
+}
+
+.ann-text p,.trend-text p{
+    font-size: 11px;
+    color: #4b5563;
+    margin: 10px 0;
+}
+.divider{
+    border: 1px solid #d1d5db;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+.trend-card{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.trend-image-text{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px 10px;
+    /* padding: 10px 0; */
+}
+
+.trend-text{
+    margin-left: 20px;
+
+}
+

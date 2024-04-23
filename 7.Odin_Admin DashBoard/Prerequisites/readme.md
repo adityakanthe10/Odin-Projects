@@ -25,7 +25,7 @@
 ## Advance grid Properties
 
 - REPEAT
-- Repeat is a css function available to the CSS Grid template properties that allow us to define a number of rows or columns and the size we want them to be withour having to manually type out each.For example
+- Repeat is a css function available to the CSS Grid template properties that allow us to define a number of rows or columns and the size we want them to be without having to manually type out each.For example
 ,in this setup
 
 .grid-container {
@@ -39,3 +39,31 @@
 }
 
 - Fractional Units
+- The most basic way to make our grid items dynamic is by using fractional units, also known as fr.
+grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
+
+- Minimum and Maximum Track Sizes- min() and max()
+- when we provide a dynamic value as one of these arguments, we unlock the real potential of these functions, especially in the context of Grid:
+
+- .grid-container {
+  grid-template-rows: repeat(2, min(200px, 50%));
+  grid-template-columns: repeat(5, max(120px, 15%));
+}
+
+- Dynamic Minimum and maximum sizes
+.grid-container {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, minmax(150px, 200px));
+}
+
+.non-grid-example {
+  width: clamp(500px, 80%, 1000px);
+}
+.grid-container {
+  grid-template-columns: repeat(5, clamp(150px, 20%, 200px));
+}
+
+## Using Flexbox and Grid
+
+- In Content First Design, you begin with clarity of how the content should be, and the layout follows. This is a great opportunity to use Flexbox.
+- In Layout First Design, you decide how you want the pieces arranged, then fill in the content.

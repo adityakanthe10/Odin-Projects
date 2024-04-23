@@ -107,4 +107,3 @@ ScrollReveal().reveal(
 );
 ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home p, .about-text", { origin: "right" });
-z;
