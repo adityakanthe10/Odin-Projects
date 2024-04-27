@@ -9,9 +9,9 @@
 11. Make contact form big and add more info,make it working ,dont know how research it
 12. Add email,phone no,add various section in footer section 
 13. Change the image ,it should be more casual.
-14. Tilt Effect is not working,remove tilt effect from about-img and add tilt effect to skills-img.
 15. There will be bugs correct them ,check every minute deatils
 16. Add custom cursor to the website
 17. Add modified logo to the name navbar and website title
+18. Make website look more aesthetic ,such as font changes and 
 
 These are the final changes ,no more changes and only correct the bugs.
