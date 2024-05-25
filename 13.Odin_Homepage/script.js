@@ -85,7 +85,7 @@ addEventOnElements(tiltElements, "mouseout", function () {
 
 // Typed JS
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "Web Designer", "UI/UX Designer"],
+  strings: ["Frontend Developer", "Web Developer", "UI/UX Designer"],
   typeSpeed: 90,
   backSpeed: 70,
   backDelay: 500,

@@ -4,6 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Jacquard+12&family=Permanent+Marker&family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Jacquard+12&family=Permanent+Marker&family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Jacquard+12&family=Permanent+Marker&family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+TAS+Beginner:wght@400..700&family=Jacquard+12&family=Permanent+Marker&family=Sedan+SC&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -105,10 +113,11 @@ header.shadow{
 }
 
 .logo{
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--text-color);
     position: relative;
+    font-family: "Dancing Script", cursive;
 }
 
 .navbar{
@@ -151,7 +160,7 @@ header.shadow{
 }
 
 .home-img{
-    order: 3;
+    order: 3
 }
 
 .home-img img{ 
@@ -174,21 +183,30 @@ header.shadow{
     font-size: var(--medium-font);
     font-weight: 500;
 }
+.heello{
+    font-family: "Dancing Script", cursive;
+}
 .home-text{
     font-size: var(--big-font);
 }
-
+.home-text h1{
+    font-family: "Dancing Script", cursive;
+}
 .home-text h2{
     font-size: 1.1rem;
     font-weight: 400;
 }
 .multiple-text{
+    font-size: var(--medium-font);
+    font-weight: 500;
+    font-family: "Permanent Marker", cursive;
     color: #1F51FF;
 }
 .home-text p{
     font-size: var(--p-font);
     font-weight: 500;
     margin: 0.7rem 0 1rem;
+    text-align: justify;
 }
 
 .social{
@@ -216,7 +234,8 @@ header.shadow{
 }
 
 .btn:hover{
-    background: var(--hover);
+    background-color: var(--hover);
+    color: black;
 }
 
 .scroll-down{
@@ -246,6 +265,7 @@ header.shadow{
 .heading h2{
     font-size: var(--medium-font);
     font-weight: 1000;
+    font-family: "Permanent Marker", cursive;
 }
 
 .heading span {
@@ -285,8 +305,9 @@ header.shadow{
 .about-text p{
     /* font-size: var(--p-font); */
     font-size: 20px;
-    font-weight: 500;
-    text-align: justify;
+    font-weight: 600;
+    text-align:justify;
+    font-family: "Sedan SC", serif;
 }
 
 .information{
@@ -297,6 +318,7 @@ header.shadow{
     display: flex;
     align-items: center;
     margin-bottom: 1.4rem;
+    
 }
 
 .information .info-box .bx{
@@ -304,8 +326,11 @@ header.shadow{
 }
 
 .information .info-box span{
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 1rem;
+    /* font-family: "Permanent Marker", cursive; */
+    font-family: "EB Garamond", serif;
+    font-size: 1.2 rem;   
 }
 .skills{
     width: 100%;
@@ -387,11 +412,13 @@ header.shadow{
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .services-box{
-    padding: 20px;
-    width: 200px;
+    margin: 20px;
+    padding: 40px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,6 +433,12 @@ header.shadow{
     border-color: var(--main-color);
     transform: scale(1.2s);
 } */
+
+.services-box img{
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+}
 .services-box h3{
     font-size: 1rem;
     font-weight: 600;
