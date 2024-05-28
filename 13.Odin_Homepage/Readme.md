@@ -12,19 +12,18 @@ These are the final changes ,no more changes and only correct the bugs.Change Na
 
 5. Convert Portfolio to project section animation and effects as per video 1 ,add image_fetch,Youtube Clone,remove rock paper scissor and form.Add description make completely as per personal website 1
 
-6. Make form section working and good Make contact form big and add more info,make it working ,dont know how research it
+6. Make contact form section working and good Make contact form big and add more info,make it working ,dont know how research it.Let the contact section be the last section.Add a button at the end that would take you to the top section(Back to top)
 
-7. Add content in footer section,take refernces from different videos,websites
+7. Make the scroll animation working for multiple times and while onclicking navbar
 
-8. Make the scroll animation working for multiple times and while onclicking navbar
-
-9. There will be bugs correct them ,check every minute details
-
-10. Add custom cursor to the website
+8. Add custom cursor to the website
 
 
-12. Lastly make the website responsive .
+
+9. Lastly make the website responsive .
 - Remove the preloader feature timing.
 - Remove bugs .
+
+10. There will be bugs correct them ,check every minute details
 
 
