@@ -529,7 +529,7 @@ header.shadow{
 }
 
 
-.bttn span,a{
+.bttn span{
     display: block;
 }
 
@@ -542,7 +542,9 @@ header.shadow{
 .h3{
     line-height: 1.3;
 }
-
+.bttn a{
+    display: block;
+}
 .project-card .card-banner::before {
     top: 0;
     left: 0;
@@ -609,7 +611,7 @@ header.shadow{
     gap: 30px;
     overflow: auto;
     scroll-snap-type: inline mandatory;
-    padding-block-end: 5px;
+    padding-block-end: 15px;
 }
 
 .slider-list::-webkit-scrollbar{
@@ -780,7 +782,7 @@ form textarea{
 }
 
 /* Making Responsive */
-@media (max-width:991px){
+@media (min-width:991px){
     header{
         padding: 18px 4%;
     }
