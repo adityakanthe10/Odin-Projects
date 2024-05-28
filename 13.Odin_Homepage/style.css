@@ -21,8 +21,9 @@
     scroll-behavior: smooth;
     scroll-padding: 2rem;
     font-family: "Poppins",sans-serif;
-
 }
+
+
 /* root is pseudo-class in CSS it allows us to define global CSS variable and set default values that can be accessed and used throughout your stylesheet */
 :root{
     --main-color:  	#1F51FF;
@@ -81,6 +82,7 @@ body.active{
     --bg-color: #0f0c27;
 
 }
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -164,6 +166,7 @@ header.shadow{
 }
 
 .home-img img{ 
+    background-color: #1F51FF;
     width: 90%;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -464,6 +467,8 @@ header.shadow{
     transform: scale(1.1);
 }
 
+
+ /* portfolio */
 .portfolio{
     width: 100%;
     height: 100vh;   
@@ -496,6 +501,7 @@ header.shadow{
     width: 100%;
     height: auto;
     margin-bottom: 1rem ;
+    object-fit: fill;
 }
 
 .portfolio-img img{
