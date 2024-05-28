@@ -102,7 +102,7 @@ ScrollReveal({
 
 ScrollReveal().reveal(".home-text, .heading", { origin: "top" });
 ScrollReveal().reveal(
-  ".home-img,.skills-container,.services-content,.portfolio-content,.contact-form,.footer",
+  ".home-img,.skills-container,.services-content,.slider-list,.contact-form,.footer",
   { origin: "bottom" }
 );
 ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
