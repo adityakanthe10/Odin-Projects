@@ -12,8 +12,10 @@
     <script src="scrollreveal.min.js"></script>
     <!-- IonIcon Fonts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-                <!-- Script  -->
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b992502c44.js" crossorigin="anonymous"></script>
+    <!-- Script  -->
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +47,7 @@
     <section class="home" id="home">
         <div class="social">
             <a href="https://github.com/adityakanthe10" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://twitter.com/aditya_kanthe" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://twitter.com/aditya_kanthe" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://www.linkedin.com/in/aditya-kanthe-a63bb9214/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
         </div>
         <div class="home-img" >
@@ -299,42 +301,58 @@
 <!-- contact -->
 <section class="contact" id="contact">
     <div class="heading">
-        <h2>Contact</h2>
-        <span>Connect with Us</span>
+        <h2>Contact ME</h2>
     </div>
-    <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Your Name">
-            <input type="email" name="id" placeholder="Your Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message here..."></textarea>
-            <input type="button" value="send" class="contact-button">
-        </form>
+        <div class="contact-container">
+            <div class="row">
+                <div class="contact-left"> 
+                    <!-- <h1 class="sub-title">Contact Me</h1> -->
+                    <p><i class="fa-solid fa-paper-plane"></i> adityakanthe10@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9324763679</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class='bx bxl-meta'></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Write Message Here..." required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+        </div>
+    </div> 
+        
+        </div>
     </div>
+
 </section>
     
 <!-- Footer -->
-
-<!-- <div class="footer"> -->
-    
-    <!-- <h2>Let's Connect</h2>
-
+<div class="footer">
+    <h2>Let's Connect</h2>
     <div class="footer-social">
         <a href="https://www.facebook.com/aditya.kanthe" target="_blank"><i class='bx bxl-meta'></i></i></a>
         <a href="https://twitter.com/aditya_kanthe" target="_blank"><i class='bx bxl-twitter'></i></a>
         <a href="https://www.instagram.com/adityakanthe10/" target="_blank"><i class='bx bxl-instagram' ></i></a>
         <a href="https://github.com/adityakanthe10" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/aditya-kanthe-a63bb9214/" target="_blank"><i class='bx bxl-linkedin-square'></i></a> -->
-        <!-- <a href="https://dribble.com" target="_blank"><i class='bx bxl-dribbble' ></i></a>
-        <a href="https://www.behance.net/adityakanthe" target="_blank"><i class='bx bxl-behance'></i></a> -->
-    <!-- </div>
-    <div class="footer-button">
+        <a href="https://www.linkedin.com/in/aditya-kanthe-a63bb9214/" target="_blank"><i class='bx bxl-linkedin-square'></i></a> 
+     </div>
+     <div class="footer-button">
         <a href="#top" id="footerbtn" class="btn">Back To Top<span><i class='bx bx-up-arrow-alt'></i></span></a> 
     </div>
-</div> -->
+</div> 
+     <!-- 
+    - #CUSTOM CURSOR
+  -->
 
-<!-- Copyright
-<div class="copyright">
-    <p>&#169;Aditya Kanthe All Right Reserved.</p>
-</div> -->
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
 </body>
 </html>

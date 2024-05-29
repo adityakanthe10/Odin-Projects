@@ -102,8 +102,67 @@ ScrollReveal({
 
 ScrollReveal().reveal(".home-text, .heading", { origin: "top" });
 ScrollReveal().reveal(
-  ".home-img,.skills-container,.services-content,.slider-list,.contact-form,.footer",
+  ".home-img,.skills-container,.services-content,.slider-list,.contact-container",
   { origin: "bottom" }
 );
 ScrollReveal().reveal(".home h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home p, .about-text", { origin: "right" });
+
+// Form
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyuBMO8rRCITgGb3UQKdvvOngLpk0VBfNDKAQ-754pH4u7abEEnR6TEA8LuxhVwxnvwPg/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 2000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+// CUSTOM CURSOR
+
+const cursors = document.querySelectorAll("[data-cursor]");
+
+const hoveredElements = [
+  ...document.querySelectorAll("button"),
+  ...document.querySelectorAll("a"),
+];
+
+window.addEventListener("mousemove", function (event) {
+  const posX = event.clientX;
+  const posY = event.clientY;
+
+  // cursor dot position
+  cursors[0].style.left = `${posX}px`;
+  cursors[0].style.top = `${posY}px`;
+
+  // cursor outline position
+  this.setTimeout(function () {
+    cursors[1].style.left = `${posX}px`;
+    cursors[1].style.top = `${posY}px`;
+  }, 80);
+});
+
+// add hovered class when mouseover on hoverElements
+
+addEventOnElements(hoveredElements, "mouseover", function () {
+  for (let i = 0, len = cursors.length; i < len; i++) {
+    cursors[i].classList.add("hovered");
+  }
+});
+
+// remove hovered class when mouseout on hoverElements
+
+addEventOnElements(hoveredElements, "mouseout", function () {
+  for (let i = 0, len = cursors.length; i < len; i++) {
+    cursors[i].classList.remove("hovered");
+  }
+});
