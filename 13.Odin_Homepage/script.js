@@ -37,10 +37,8 @@ function hidePreloader() {
 // Show the preloader when the page starts loading
 document.addEventListener("DOMContentLoaded", () => {
   const preloader = document.querySelector(".preloader");
-  setTimeout(hidePreloader, 1000); // Hide the preloader after 2 seconds
+  setTimeout(hidePreloader, 10); // Hide the preloader after 2 seconds
 });
-
-// tile effect to main image
 
 // Function to add event listeners to multiple elements
 function addEventOnElements(elements, event, callback) {
@@ -134,6 +132,7 @@ const cursors = document.querySelectorAll("[data-cursor]");
 const hoveredElements = [
   ...document.querySelectorAll("button"),
   ...document.querySelectorAll("a"),
+  ...document.querySelectorAll("hoe"),
 ];
 
 window.addEventListener("mousemove", function (event) {
