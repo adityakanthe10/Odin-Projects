@@ -695,7 +695,6 @@ header.shadow{
 
 .contact-left{
     flex-basis: 35%;
-    /* padding: 20px; */
 }
 
 .contact-right{
@@ -862,8 +861,8 @@ form .btn2{
     .row p i{
         font-size: 10px;
     } 
-    .contact-left{
-        flex-basis: 40%;
+    .contact-right form{
+        
     }
 }
 
@@ -949,23 +948,6 @@ form .btn2{
         display: flex;
         justify-content: center;
     }    
-
-    .project{
-        height: auto;
-    }
-
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    .contact-left{
-        flex-basis: 100%;
-    }
-    .contact-right{
-        flex-basis: 100%;
-    }
 }
 
 @media (max-width:340px) {
@@ -996,21 +978,10 @@ form .btn2{
     padding: 10px;
    }
    .contact .row{
-    flex-wrap: wrap;
+    display: flex;
    }
-   .contact-left{
-    padding: 5px;    
-    flex-basis: 100%; 
-}
-    .contact-right{
-        flex-basis: 100%;
-    }
-    .footer h2{
-display: none;
-    }
-}
 
-
+}
 /* Adjust styles for dark mode */
 body.active .footer {
     background: var(--main-color); /* Set background color for dark mode */
@@ -1021,9 +992,9 @@ body.active .social-icon a:hover{
 color: #fff;
 }
 
-body.active .project-card a{
-    color: #fff;
-}
+/* body.active .home-img{
+    background-color: ;
+} */
 
 body.active .footer-button .btn {
     border: 2px solid white; /* Set border color for dark mode */
