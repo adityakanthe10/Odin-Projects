@@ -186,7 +186,7 @@ header.shadow{
 }
 
 .home-img img{ 
-    background-color: #1F51FF;
+    /* background-color: #1F51FF; */
     width: 90%;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -924,7 +924,7 @@ form .btn2{
     } */
     .home-img{
         order: initial;
-        background-color: #0f0c27;
+        /* background-color: #0f0c27; */
     }
 
     .about-container{
